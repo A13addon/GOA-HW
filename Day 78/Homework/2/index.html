@@ -1,0 +1,81 @@
+<title>
+    Test Website
+</title>
+
+
+<body>
+    
+    <div class="container">
+        <div class="box">
+            
+        </div>
+        <div class="buttons">
+            <button id="red"></button>
+            <button id="blue"></button>
+            <button id="pink"></button>
+            <button id="black"></button>
+            <button id="green"></button>
+        </div>
+    </div>
+</body>
+
+
+<style>
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+    gap: 20px;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    height: 30px;
+    width: 30px;
+    border: 0px;
+    border-radius: 50%;
+}
+
+#red { background-color: red; }
+#blue { background-color: blue; }
+#pink { background-color: pink; }
+#black { background-color: black; }
+#green { background-color: green; }
+
+
+
+
+</style>
+
+<script>
+    function changeColor(event) {
+      const box = document.querySelector('.box');
+      const color = event.target.id;
+      box.style.backgroundColor = color;
+    }
+
+    const buttons = document.querySelectorAll('.buttons button');
+    buttons.forEach(button => {
+      button.addEventListener('click', changeColor);
+    });
+    
+  </script>

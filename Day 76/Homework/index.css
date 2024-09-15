@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#ParBefore {
+    display: flex;
+    background-color: lightblue;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

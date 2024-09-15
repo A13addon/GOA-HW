@@ -1,0 +1,91 @@
+
+<div class="container">
+    <div class="box">
+
+    </div>
+
+    <p></p>
+</div>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: rubik;
+    }
+
+    .container {
+        display: flex;
+        width: 50%;
+        height: 50%;
+        background-color: rgb(143, 143, 143);
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container:hover .box {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #000000; 
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: myAnimation 3s 1;
+    }
+
+    .container:hover p::before {
+        content: "Loading";
+        animation: loading 3s 1;
+    }
+
+    .container:hover p::after {
+        content: none;
+    }
+
+    .box {
+        border: 16px solid #f3f3f3;
+            border-top: 16px solid #000000; 
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+    }
+
+
+    @keyframes myAnimation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes loading {
+        0% {
+            content: "Loading";
+        }
+        
+        50% {
+            content: "Loading.";
+        }
+
+        75% {
+            content: "Loading..";
+        }
+
+        99% {
+            content: "Loading...";
+        }
+        100% {
+            content: none;
+        }
+    }
+
+
+
+</style>

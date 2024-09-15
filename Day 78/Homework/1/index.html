@@ -1,0 +1,27 @@
+<title>
+    Test Website
+</title>
+
+
+<body>
+    <button id="clickMe">
+        Click Me!!
+    </button>
+    <div id="counter">
+        Clicks: 0
+    </div>
+</body>
+
+<script>
+    let clickCount = 0
+
+    const button = document.getElementById('clickMe')
+    const counterDisplay = document.getElementById('counter')
+
+    function clickounter (){
+        clickCount++;
+        counterDisplay.textContent = `Clicks: ${clickCount}`;
+
+    }
+    button.addEventListener('click', clickounter);
+</script>

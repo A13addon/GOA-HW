@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="index.css">
+
+
+<title>
+    Test Subject
+</title>
+
+<main>
+    <div class="container">
+        <div class="paragraphs">
+            <p id="ParBefore">
+                Hello my name is Michael and I'm modifying the Test Subject
+            </p>
+            <p id="ParUntouched">
+                This paragraph must stay untouched !!!!!!!!
+            </p>
+        </div>
+    </div>
+    <button onclick="toggleSize()">Toggle Size</button>
+</main>
+
+<style>
+    
+#ParBefore {
+    transition: width 0.5s;
+}
+
+.enlarged {
+    width: 200px;
+    background-color: aquamarine;
+}
+
+</style>
+
+<script>
+    function toggleSize() {
+        const element = document.getElementById('ParBefore');
+        element.classList.toggle('enlarged');
+    }
+    
+</script>

@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading screen</title>
+</head>
+<body>
+    <div class="container">
+            <div class="loading-bar"> Load </div>
+    </div>
+</body>
+
+<style>
+    .body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 400px;
+        background-color: rgb(145, 145, 145);
+    }
+
+    .loading-bar {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        border: 1px rgb(0, 0, 0) solid;
+        width: 10%;
+        height: 30px;
+        border-radius: 50px;
+        transition: width 300ms linear 100ms;
+        transform: translate(-2px, -5px);
+        text-align: center;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+    }
+
+    .loading-bar:hover{
+        width: 80%;
+    }
+
+    .loading-bar:hover::after{
+        content: " ing";
+    }
+</style>
+</html>
+
