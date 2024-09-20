@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    margin: 0;
+    box-sizing: content-box;
+  }
+
+p {
+    align-items: center;
+}
+  
+  #textinput {
+    display: flex;
+    border-radius: 50px;
+    text-align: center;
+    height: 30px;
+    width: 400px;
+  }
