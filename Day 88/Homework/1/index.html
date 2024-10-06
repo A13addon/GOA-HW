@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            align-content: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <button class="button" onclick="play('rock')">Rock</button>
+    <button class="button" onclick="play('paper')">Paper</button>
+    <button class="button" onclick="play('scissors')">Scissors</button>
+    
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
