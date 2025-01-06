@@ -1,0 +1,14 @@
+
+const promise = new Promise ((resolve, reject) => { 
+    const rand = Math.random();
+    if (rand > 0.5) {
+        resolve("Success!")
+    
+    } else {
+        reject("Failed")
+
+    }
+})
+
+promise.then(message => console.log(message))
+promise.catch(message => console.log(message))
